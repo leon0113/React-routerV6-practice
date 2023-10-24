@@ -1,8 +1,11 @@
 // import { useEffect, useState } from "react"
 import { useLoaderData } from "react-router-dom";
 
+
+
 function Github() {
     const data = useLoaderData()
+    // console.log(data);
     // const [data, setData] = useState([]);
 
     // useEffect(() => {
@@ -12,7 +15,7 @@ function Github() {
     // }, [])
 
     return (
-        <div className="text-center m-4 bg-green-400 text-white text-3xl p-4">Github followers: {data?.followers}
+        <div className="text-center m-4 bg-green-400 text-white text-3xl p-4">Repositories: {data.public_repos}
             <img src={data?.avatar_url} alt="" />
         </div>
 
